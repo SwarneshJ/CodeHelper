@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CodeHelper | Quiz</title>
+    <link rel="stylesheet" href="style-quiz.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head-bar">
+        <div class="header-left">
+          <img
+            class="logo"
+            src="https://image.flaticon.com/icons/svg/1336/1336494.svg"
+          />
+          <a href="index.html">CodeHelper</a>
+        </div>
+
+        <div class="header-right">
+          <a href="quiz.html">Quiz</a>
+          <a href="references.html">Links</a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="initial">
+        <div class="start" onClick="startQuiz('one')">Start HTML/CSS Quiz!</div>
+        <div class="start" onClick="startQuiz('two')">
+          Start Java/Python Quiz!
+        </div>
+        <div class="start" onClick="startQuiz('three')">
+          Start Database Quiz!
+        </div>
+      </div>
+      <div class="quiz" style="display: none">
+        <div class="question"></div>
+        <div class="qImg"></div>
+        <div class="options">
+          <div class="optionA" onclick="checkAnswer('A')"></div>
+          <div class="optionB" onclick="checkAnswer('B')"></div>
+          <div class="optionC" onclick="checkAnswer('C')"></div>
+        </div>
+        <div class="timer">
+          <div class="counter"></div>
+          <div class="btimeGauge"></div>
+          <div class="timeGauge"></div>
+        </div>
+        <div class="progress"></div>
+      </div>
+      <div class="marks" style="display: none"></div>
+    </div>
+    <div class="buttons">
+      <a href="quiz.html">Restart Quiz</a>
+      <a href="index.html">Home</a>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
